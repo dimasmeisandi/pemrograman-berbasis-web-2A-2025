@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            background-image: url('bacground.jpg');
+            background-size: cover; /*biar langsung cover ga diulang */
+            background-position: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4); /* gelap hytam */
+            background-blend-mode: overlay; 
+        }
+        h1, h2 {
+            color: rgb(0, 0, 0);
+            font-family:cursive;
+            font-weight: bold;
+        }
+        table {
+            background: rgba(82, 8, 8, 0.573); /* merah */
+            padding: 10px;  /*jarak pinggir */
+            border-radius: 10px;    /* bulat sudut bulet*/
+            color: white;
+        }
+        ul {
+            display: inline-block;  /*untuk buat menyesuaikan isi ditengah */
+            text-align: left;
+        }
+        nav { 
+            margin: 40px;
+        }
+        a {
+            color: rgb(93, 93, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 align="center">Profil Pribadi</h1>
+    <hr style="width: 50%; border: 1px solid black;">
+    <table align="center" cellpadding="10px" width="600px">
+        <tr>
+            <td>Nama</td>
+            <td>: Dimas Meisandi Firdausi</td>
+            <td rowspan="5"><img src="fotogw.png" height="180" width="125"/td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>: Kabupaten Pamekasan</td>
+        </tr>
+        <tr>
+            <td>Tempat, Tanggal Lahir</td>
+            <td>: Pamekasan, 01 Mei 2006</td>
+        </tr>
+        <tr>
+            <td>Nomor HP</td>
+            <td>: 082245224526</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>: dimasmeisandi@gmail.com</td>
+        </tr>
+    </table>
+    
+    <div align="center">
+        <hr style="width: 50%; border: 1px solid black;">
+        <h2>Riwayat Pendidikan</h2>
+        <hr style="width: 50%; border: 1px solid black;">
+        <ul>
+            <li>Sekolah Dasar (SD): SDN Pademawu Barat 2</li>
+            <li>Sekolah Menengah Pertama (SMP): SMPN 2 Pademawu </li>
+            <li>Sekolah Menengah Atas (SMA): SMAN 1 Pademawu</li>
+            <li>Perguruan Tinggi: Universitas Trunojoyo Madura</li>
+        </ul>
+        <hr style="width: 50%; border: 1px solid black;">
+        <h2>Hobi dan Minat</h2>
+        <hr style="width: 50%; border: 1px solid black;">
+        <ul>
+            <li>Hobi futsal</li>
+            <li>Minat pengembangan diri </li>
+        </ul>
+        <hr style="width: 50%; border: 1px solid black;">
+        <h2>Pengalaman</h2>
+        <hr style="width: 50%; border: 1px solid black;">
+        <p>Bergabung dengan Unit Kegiatan Mahasiswa (UKM) memberikan banyak pengalaman berharga.Salah satunya di UKM FT ITC, disini saya dapat mengembangkan keterampilan di luar akademik, memperluas jaringan pertemanan,
+         serta berkontribusi dalam berbagai kegiatan kampus. Selain itu, saya belajar tentang kerja sama tim, tanggung jawab, dan kepemimpinan yang sangat bermanfaat untuk kehidupan perkuliahan maupun di masa depan. </p>
+        
+    </div>
+    
+    <div align="center">
+        <hr style="width: 50%; border: 1px solid black;">
+        <h2>Kesan dan Harapan</h2>
+        <hr style="width: 50%; border: 1px solid black;">
+        <p>Kesan ada awal perkuliahan, saya merasakan campuran perasaan antara senang dan gugup. Bertemu dengan teman-teman baru dari berbagai daerah dan latar belakang memberikan pengalaman yang berharga. Selain itu, saya juga harus beradaptasi dengan sistem pembelajaran yang berbeda dari sekolah,
+            di mana kemandirian dan tanggung jawab menjadi hal utama dalam menyelesaikan tugas dan mengikuti perkuliahan."</p>
+        <p>Harapan selama perkuliahan ini dapat terus berkembang, baik dalam hal akademik maupun non-akademik. Saya ingin menggali lebih dalam ilmu yang saya pelajari, aktif dalam berbagai organisasi, serta membangun relasi yang bermanfaat untuk masa depan. 
+            Semoga perjalanan kuliah ini membawa saya lebih dekat ke cita-cita dan memberikan pengalaman yang tak terlupakan.</p>
+        <hr style="width: 50%; border: 1px solid black;">
+        <h2>Formulir</h2>
+        <hr style="width: 50%; border: 1px solid black;">
+        <form>
+            <label>Bahasa Pemrograman yang Dikuasai:</label>
+            <input type="text" name="bahasa_pemrograman" placeholder="Contoh: Python, Java" required><br>
+            
+            <label>Bahasa Asing yang Dikuasai:</label>
+            <input type="text" name="bahasa_asing" placeholder="Contoh: Inggris, Jepang" required><br>
+            
+            <label>Perangkat Lunak yang Sering Digunakan:</label><br>
+            <input type="checkbox" name="software" value="Photoshop" required> Photoshop
+            <input type="checkbox" name="software" value="Microsoft Office"> Microsoft Office
+            <input type="checkbox" name="software" value="Visual Studio Code"> Visual Studio Code <br>
+            
+            <label>Sistem Operasi yang Digunakan:</label><br>
+            <input type="radio" name="sistem_operasi" value="Windows" required> Windows
+            <input type="radio" name="sistem_operasi" value="MacOS"> MacOS
+            <input type="radio" name="sistem_operasi" value="Linux"> Linux<br>
+            
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+        </form>
+        <nav>
+            
+            <hr style="width: 50%; border: 1px solid black;">
+            <a href="no 2 pengalaman kuliah.html">Pengalaman Kuliah</a> | 
+            <a href="no 3 blog.html">Blog</a>
+        </nav>
+    </div>
+    
+</body>
+</html>
