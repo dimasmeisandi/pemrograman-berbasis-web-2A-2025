@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;  /*jarak antar baris*/
+    background-color: #fff;
+  }
+  
+  
+  /* di indexx */
+  .navbar {
+    background-color: #ff4500;
+    display: flex;  /* berjajar kiri kanan */
+    justify-content: space-between;  /* jarak kiri kanan */
+    align-items: center;
+    padding: 1em 2em;
+    
+  }
+  .logo {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-family: cursive;
+    display: flex;  /* berjajar kiri kanan */
+    justify-content: space-between;  /* jarak kiri kanan */
+    align-items: center; 
+    
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none; /*Menghilangkan garis bawah dari link. */
+    color: white;
+    font-weight: 500; /* ketebalan sedang */
+  }
+  
+  .nav-links a:hover {
+    color: #ffd700;
+  }
+  
+
+  .hero-home {
+    display: flex; 
+    justify-content: space-between; /*  Memberi jarak maksimal antara teks dan gambar. */
+    padding: 4em 5em;
+    background-color: #0b0b0b88;
+    background-image: url('restoran.jpeg');
+    background-blend-mode: overlay; 
+    background-size: cover;
+    color: #ff3434;
+
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero-text p {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 1.5em;
+    
+  }
+  
+  .btn-contact {
+    background-color: #ff4500;
+    color: white;
+    padding: 0.7em 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .hero-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  input {
+    padding: 10px;
+  }
+  
+  
+  .contact-button {
+    background-color: rgba(255, 1, 1, 0.731);
+    color: blue;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+  }
+  
+  .contact-button:hover {
+    background-color: #0a0a0a;
+    
+  }
+
+  .footer-contact{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /*section */
+  .section {
+    padding: 3em 2em;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    
+  }
+    
+  /*menu item */
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Buat kolom otomatis, minimal 250px */
+    gap: 2em;
+    margin-top: 2em;
+  }
+  
+  .menu-item {
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .menu-item h3 {
+    margin: 0.5em 0;
+  }
+  
+  .menu-item span {
+    display: block;
+    font-weight: bold;
+    margin-top: 0.5em;
+    color: #ff4500;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+    
+  }
+  
+
+
+
+  /* about */
+  .about-section {
+    padding: 60px;
+  }
+  
+  .about-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    flex-wrap: wrap; /*biar tetep sebaris */
+  }
+  
+  .about-row.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  .about-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+  }
+
+  
+  
